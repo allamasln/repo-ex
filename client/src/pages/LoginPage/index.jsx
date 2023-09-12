@@ -15,21 +15,16 @@ function LoginPage() {
 	const [, dispatch] = useAuth()
 
 	const onSubmit = (data) => {
-		authService
-			.login(data)
-			.then((user) => {
-				dispatch({
-					type: 'login',
-					payload: {
-						username: user.username,
-					},
-				})
+		authService.login(data).then((user) => {
+			dispatch({
+				type: 'login',
+				payload: {
+					username: user.username,
+				},
+			})
 
-				navigate(-1, { replace: true })
-			})
-			.catch((err) => {
-				toast.error('Vuelve a intentarlo')
-			})
+			navigate(-1, { replace: true })
+		})
 	}
 
 	return (
