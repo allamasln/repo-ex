@@ -2,10 +2,13 @@ import { Outlet } from 'react-router-dom'
 
 import { Container, Stack } from '@mui/material'
 
+import { Navbar } from '../components'
+
 import { ToastContainer } from 'react-toastify'
 function RootLayout() {
 	return (
 		<Container display="flex" maxWidth="xxl" disableGutters>
+			<Navbar />
 			<Container maxWidth="xl" sx={{ mt: 5 }}>
 				<Outlet />
 			</Container>
