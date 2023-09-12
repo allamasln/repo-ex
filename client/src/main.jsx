@@ -7,12 +7,16 @@ import { ThemeProvider as MUIThemeProvider } from '@mui/material/styles'
 import router from './router'
 import theme from './theme'
 
+import { AuthProvider } from './hooks/auth'
+
 import 'react-toastify/dist/ReactToastify.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<MUIThemeProvider theme={theme}>
-		<CssBaseline />
+	<AuthProvider>
+		<MUIThemeProvider theme={theme}>
+			<CssBaseline />
 
-		<RouterProvider router={router} />
-	</MUIThemeProvider>
+			<RouterProvider router={router} />
+		</MUIThemeProvider>
+	</AuthProvider>
 )

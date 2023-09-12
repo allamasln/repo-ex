@@ -1,0 +1,53 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "trollolo-users",
+    "dateExported": "2023-09-12T18:14:10.828Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a79e9217-1145-419d-b77c-e52f40e7d950",
+            "colId": "fd80a565-0d3b-4e98-ba5a-08423725105a",
+            "containerId": "",
+            "name": "/signin",
+            "url": "/signin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-12T18:04:26.670Z",
+            "modified": "2023-09-12T18:14:03.674Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user1\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6028f71c-8ad5-4e48-a0bf-16b24db6f345",
+            "colId": "fd80a565-0d3b-4e98-ba5a-08423725105a",
+            "containerId": "",
+            "name": "/signup",
+            "url": "/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-12T18:12:58.370Z",
+            "modified": "2023-09-12T18:14:00.041Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user1\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{host}}/users"
+        },
+        "envId": "e561856e-bd94-47db-a14f-3dfe20215fe9"
+    }
+}

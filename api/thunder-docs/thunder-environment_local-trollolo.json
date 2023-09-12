@@ -1,0 +1,20 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "local-trollolo",
+    "dateExported": "2023-09-12T18:05:18.386Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "address",
+            "value": "localhost"
+        },
+        {
+            "name": "port",
+            "value": "4040"
+        },
+        {
+            "name": "host",
+            "value": "{{address}}:{{port}}/api"
+        }
+    ]
+}
